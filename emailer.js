@@ -16,6 +16,8 @@ if (argv.h || argv.help) {
 
 let recepientEmail = argv._[0];
 let recepientName = argv._[1];
+let senderEmail = argv.from;
+
 let emailSubject = argv._[2];
 let file = argv.f;
 
@@ -56,7 +58,7 @@ let postData = {
 			subject: emailSubject,
 		},
 	],
-	from: { email: 'notifier@techkranti.com', name: 'Ameys Notifier' },
+	from: { email: senderEmail || recepientEmail, name: 'emailer.js' },
 	content: [{ type: 'text/plain', value: text }],
 };
 
