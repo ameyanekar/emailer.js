@@ -3,6 +3,7 @@ Send Email Using SendGrid API
 
 ### Clone Repo
 git clone https://github.com/ameyanekar/emailer.js.git
+
 cd emailer.js
 
 ### Install Dependencies
